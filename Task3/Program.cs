@@ -26,9 +26,7 @@ for (int i = 0; i < m; i++)
         Console.WriteLine();
     }
 Console.WriteLine();
-foreach (double item in summ)
+foreach (double element in summ)
 {
-    System.Console.WriteLine($"среднее арифметическое = {item/n}; ");
+    System.Console.WriteLine($"среднее арифметическое = {element/n}; ");
 }
-  
-

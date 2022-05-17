@@ -19,12 +19,12 @@ Console.WriteLine("Введите индекс строки: ");
 int a = int.Parse(Console.ReadLine());
 Console.WriteLine("Введите индекс столбца: ");
 int b = int.Parse(Console.ReadLine());
-int fined = mass[a, b];
-if (a > mass.Length && b > mass.Length)
+if (a > mass.GetLength(0) && b > mass.GetLength(1))
 {
     Console.WriteLine("Такого элемента нет");
 }
 else
 {
+    int fined = mass[a, b];
     System.Console.WriteLine($"Искомый элемент массива имеет значение: {fined}");
 }
